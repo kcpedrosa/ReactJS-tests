@@ -7,7 +7,7 @@ class Membro extends Component{
         this.state = {
             username: props.nome
         }
-        this.entrar=this.entrar.bind(this)
+        this.entered=this.entrar.bind(this)
     }
     entrar(){
         this.setState({username: 'Sauron'})
@@ -17,8 +17,8 @@ class Membro extends Component{
         return(
             <div>
                 <h1>Bem vindo(a) {this.state.username}</h1>
-                <button onClick={this.entrar}>Entrar no sistema</button>
-                <button onClick={() => this.setState({username: ''}) }>Sair</button>
+                <button onClick={this.entered}>Entrar no sistema</button>
+                <button onClick={() => this.setState({username: 'Visitante'}) }>Sair</button>
             </div>
         )
     }

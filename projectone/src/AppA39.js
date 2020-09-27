@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Membro from './components/membros/membro';
+import Membro from './components/membros';
 //se vc renom membro pra index.js a cham poderia ser ./components/membros
 //o react procura por default um arqv cham index
 

@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import App from './App.js';
+import App from './App51.js';
+
 
 import * as serviceWorker from './serviceWorker';
-import SocialMedia from './Social';
+
 
 ReactDOM.render(
   <React.StrictMode>

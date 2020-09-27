@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
- 
+ //it is necess to set a key when using map
 
 class Feed extends Component{
     render(){
@@ -7,9 +7,10 @@ class Feed extends Component{
             <div key={this.props.id}>
                 <h3>{this.props.username}</h3>
                 <a>{this.props.curtidas > 1 ? this.props.curtidas + ' curtidas ' 
-                : this.props.curtidas + ' curtida '} 
-                {this.props.comentarios > 1 ? this.props.curtidas + ' comentarios ' 
-                : this.props.curtidas + ' comentario '} </a>
+                : this.props.curtidas + ' curtida '} <a/>
+                <br/>
+                <a/>{this.props.comentarios > 1 ? this.props.comentarios + ' comentarios ' 
+                : this.props.comentarios + ' comentario '} </a>
                 <hr></hr>
 
             </div>

@@ -15,10 +15,11 @@ class App extends Component {
 
     aumentar(){
         //jeito do prof
-        let state = this.state
-        state.nome = 'Manson'
-        state.contador += 1
-        this.setState(state)
+        let estado = this.state
+        estado.nome = 'Manson'
+        estado.contador += 1
+        this.setState(estado)
+        //mudei aqui para estado ->let estado e nao state
     }
 
     diminuir(){

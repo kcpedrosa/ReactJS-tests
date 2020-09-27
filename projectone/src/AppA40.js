@@ -7,8 +7,8 @@ class App extends Component {
         this.state = {
             status: false
         }
-        this.entrar = this.entrar.bind(this)
-        this.sair = this.sair.bind(this)
+        this.access = this.entrar.bind(this)
+        this.logout = this.sair.bind(this)
     }
 
     sair(){
@@ -24,14 +24,16 @@ class App extends Component {
     render(){
         return(
             <div>
-                    {this.state.status ?
+                    {this.state.status == true
+                     ?
                     <div>
                         <h2>Bem vindo ao sistema</h2>
-                        <button onClick={this.sair}>Sair</button>
-                    </div> :
+                        <button onClick={this.logout}>Sair</button>
+                    </div>
+                     :
                     <div>
                         <h2>Olá visitante, faça login</h2>
-                        <button onClick={this.entrar}>Entrar no sistema</button>
+                        <button onClick={this.access}>Entrar no sistema</button>
                     </div>
                         }
             </div>

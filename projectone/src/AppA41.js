@@ -10,7 +10,8 @@ class App extends Component {
                 {id:1, username:'Sauron', curtidas: 10, comentarios:2},
                 {id:2, username:'Melkor', curtidas: 100, comentarios:12},
                 {id:3, username:'Carcharoth', curtidas: 30, comentarios:6},
-                {id:4, username:'John5', curtidas: 1, comentarios:0}
+                {id:4, username:'John5', curtidas: 1, comentarios:0},
+                {id: 5, username:'Shelob', curtidas: 'some...', comentarios:5}
             ]
         }
     }

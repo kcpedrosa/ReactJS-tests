@@ -6,16 +6,17 @@ class App extends Component {
     constructor(props){
         super(props)
         this.state={
-            email: 'sauron@mordor.com',
+            email: 'exemplosauron@mordor.com',
             senha: '',
-            sexo: 'masculino'
+            sexo: ''
 
         }
-        this.trocaEmail=this.trocaEmail.bind(this)
-        this.trocaSexo=this.trocaSexo.bind(this)
+        this.changeMail=this.trocaEmail.bind(this)
+        this.cHANGESEX=this.trocaSexo.bind(this)
     }
     trocaEmail(event){
         let valorDigitado = event.target.value
+        //target aims in the input were typing
         this.setState({email : valorDigitado})
 
     }
@@ -28,16 +29,17 @@ class App extends Component {
         return(
             <div>
                 <h2>Login</h2>
-                Email:
+                <p>Email:</p>
                 <input type="email" name="email" value={this.state.email}
-                onChange={this.trocaEmail}></input>
+                onChange={this.changeMail}></input>
                 <br></br>
-                Senha:
+                <p>Senha:</p>
                 <input type="password" name="senha" value={this.state.senha}
                 onChange={(event)=> this.setState({senha : event.target.value})}></input>
                 <br></br>
-                Sexo:
-                <select name='sexo' value={this.state.sexo} onChange={this.trocaSexo}>
+                <p>Sexo:</p>
+                <select name='sexo' value={this.state.sexo} onChange={this.cHANGESEX}>
+                    <option value="">-- Selecione --</option>
                     <option value='masculino'>Masculino</option>
                     <option value='feminino'>Feminino</option>
                 </select>

@@ -6,7 +6,7 @@ class App extends Component {
     constructor(props){
         super(props)
         this.state={
-            form:{
+            objeto:{
             nome:'',
             email: '',
             senha: '',
@@ -17,8 +17,9 @@ class App extends Component {
         
     }
     dadosForm(event){
-        this.state.form[event.target.name] = event.target.value
-        this.setState({form: this.state.form})
+        let abkurzung = this.state.objeto
+        abkurzung[event.target.name] = event.target.value
+        this.setState({objeto: abkurzung})
     }
 
     
@@ -28,27 +29,28 @@ class App extends Component {
             <div>
                 <h2>Login</h2>
                 Nome:
-                <input type='text' name='nome' value={this.state.form.nome} 
+                    <input type='text' name='nome' value={this.state.objeto.nome} 
                 onChange={this.dadosForm}></input>
                 <br></br>
                 Email:
-                <input type="email" name="email" value={this.state.form.email}
+                    <input type="email" name="email" value={this.state.objeto.email}
                 onChange={this.dadosForm}></input>
                 <br></br>
                 Senha:
-                <input type="password" name="senha" value={this.state.form.senha}
+                    <input type="password" name="senha" value={this.state.objeto.senha}
                 onChange={this.dadosForm}></input>
                 <br></br>
                 Sexo:
-                <select name='sexo' value={this.state.form.sexo} onChange={this.dadosForm}>
+                    <select name='sexo' value={this.state.objeto.sexo} onChange={this.dadosForm}>
+                    <option value="">-- Selecione --</option>
                     <option value='masculino'>Masculino</option>
                     <option value='feminino'>Feminino</option>
                 </select>
                 <div>
-                <h3>{this.state.form.nome}</h3>
-                <h3>{this.state.form.email}</h3>
-                <h3>{this.state.form.senha}</h3>
-                <h2>{this.state.form.sexo}</h2>
+                <h3>{this.state.objeto.nome}</h3>
+                <h3>{this.state.objeto.email}</h3>
+                <h3>{this.state.objeto.senha}</h3>
+                <h2>{this.state.objeto.sexo}</h2>
             </div>
             </div>
             
