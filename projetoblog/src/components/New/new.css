@@ -1,0 +1,99 @@
+div#jumboteste{ /*mimicking the jumbotron of bootstrap*/
+    background: #E6E6E6;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+header#new{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 680px;
+    align-items: flex-start;
+    margin: 20px auto 10px;
+}
+
+header#new a{
+    background: #585858;
+    padding: 8px 18px 8px;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+header#new a:hover{
+    background: #272727;
+    transition: 0.7s;
+    font-size: 15px;
+}
+
+form#new-post {
+    background: #FFF;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto 0;/*remember/margin: it is 0 for top, auto for sides, 0 for bottom*/
+    padding: 30px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form#new-post input{
+    margin-bottom: 10px;
+}
+
+form#new-post span{
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+
+/*styling the progress*/
+form#new-post label{
+    margin-bottom: 15px;
+}
+
+form#new-post img{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+form#new-post progress{
+    margin-bottom: 15px;
+}
+
+form#new-post input[type='text']{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    padding: 0 20px;/*applies a padding for the sides and 0 for top/bottom*/
+}
+
+form#new-post textarea{
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+form#new-post button{
+    background: #585858;
+    color: #FFF;
+    padding: 10px  20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form#new-post button:hover{
+    background: #272727;
+    font-size: 16px;
+    transition: 0.7s;
+}

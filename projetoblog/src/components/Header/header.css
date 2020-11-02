@@ -1,0 +1,30 @@
+header#main-header{
+    background: #272727;
+    height: 72px;
+}
+
+header#main-header .header-content {
+    width: 100%;
+    max-width: 930px;
+    margin:0 auto;
+    padding: 0 30px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*that a is for the Link*/
+header#main-header .header-content a{
+    color: #fff;
+    text-decoration: none;
+    /*above removes the underline of links*/
+    font-size: 23px;
+    margin-left: 15px;
+}
+
+header#main-header .header-content a:hover{
+    transition: 0.7s;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}

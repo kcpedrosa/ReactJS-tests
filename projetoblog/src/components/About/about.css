@@ -1,0 +1,13 @@
+div.main p{
+    margin: 10px;
+}
+
+div.main a{
+    margin: 10px;
+}
+
+div p#quote{
+    font-style: italic;
+    text-align: center;
+    margin: 80px auto 20px;
+}

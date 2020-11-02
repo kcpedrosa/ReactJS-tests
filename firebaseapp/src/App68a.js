@@ -3,6 +3,7 @@ import Initial from './Component/Initialscreen'
 import Userpanel from './Component/Userpanel'
 
 import firebase from './firebaseConnection'
+//this app has components use as suggested by the teacher
 
 
 export default class App extends Component{
